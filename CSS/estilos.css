@@ -1,0 +1,152 @@
+/* Plantilla de estilo CSS para práctica web */
+/* De William Rivera Reyes para 5A Programación CBTis 142 */
+
+/* --- ESTILO GENERAL --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: linear-gradient(180deg, #fdfbfb 0%, #ebedee 100%);
+    color: #333;
+}
+
+/* --- ENCABEZADO Y NAVEGACIÓN --- */
+header {
+    background: linear-gradient(90deg, #0077b6, #00b4d8);
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffdd57;
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section, aside {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    flex: 1 1 45%;
+}
+
+/* --- TABLAS --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table caption {
+    caption-side: top;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #00b4d8;
+    color: white;
+    padding: 8px;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+/* --- FORMULARIOS --- */
+form {
+    background-color: #f7f9fb;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea, button {
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #023e8a;
+}
+
+/* --- IMÁGENES --- */
+img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+/* --- PIE DE PÁGINA --- */
+footer {
+    background-color: #023e8a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* --- RESPONSIVO --- */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    section, aside {
+        flex: 1 1 100%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+}

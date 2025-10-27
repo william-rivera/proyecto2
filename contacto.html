@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="William Rivera Reyes">
+    <meta name="date" content="02/10/2025">
+    <meta name="description" content="contacto del minisitio">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Contáctanos</h1>
+        <nav>
+            <a href="index.html">Inicio</a> |
+            <a href="productos.html">Productos</a> |
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Envíanos un mensaje</h2>
+            <form>
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required><br><br>
+
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="40"></textarea>
+                    <br><br>
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Ubicación</h2>
+            <!-- aqui vas a pegar el mapa de google maps -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.2914099667764!2d-97.11325112456342!3d18.87414908228935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c51d47f2a4d995%3A0xc22ee894c367e12!2sCBTIS%20No.%20142!5e0!3m2!1sen!2smx!4v1759420345547!5m2!1sen!2smx"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- hasta aquí termina lo que copiaste de google maps -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Creado por DrWill</p>
+    </footer>
+
+</body>
+
+</html>
